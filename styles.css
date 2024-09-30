@@ -7,8 +7,12 @@
 
 
 body{
-    height: 100vh;
+   display: flex;
+   flex-direction: column;
+    width: 100%;
     background-color: #4B0082;
+    overflow-x: hidden;
+    overflow-y: auto;
    
 }
 
@@ -56,9 +60,14 @@ main{
 }
 
 #navbar {
+    background-color: #4B0082;
+    opacity: 0.8;
+    width: 100%;
+    border-radius: 10px;
     position:fixed;
     padding:40px 4%;
-    right:0 ;
+    right:0;
+
 }
 header nav ul li{
     display: inline-block;
@@ -87,18 +96,23 @@ ul {
 }
 
 #welcome-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background-color:transparent;
+    width: 100vw;
     
-    width: 60%;
-    margin-left: 350px;
     
 }
 
 #img{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;padding: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 #img img{
@@ -118,18 +132,11 @@ ul {
    
 }
 .text h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
 
 .text h3{
-  
-   display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.2rem;
     color: #D3D3D3;
     text-align: center;
@@ -137,28 +144,32 @@ ul {
 }
 
 #about{
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
-    width: 100%;
+    width: 100vw;
     height: 250px;
     text-align: center;
     padding: 10px;
 
-
-
 }
 
 #about p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
    margin-top:10px;
    font-size: 1.2em;
    letter-spacing: 1px;
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+   white-space: normal;
+   overflow:auto ;
+ 
+  
 }
 
 
 #projects{
     padding: 20px;
+    width: 100vw;
 }
 
 .project-tile{
@@ -191,63 +202,25 @@ ul {
 }
 
 #contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: #D3D3D3;
     height: 150px;
     margin-top: 50px;
     box-shadow: 2px 1px 10px 0px #7d7d7d;
 }
 #contact p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-top:20px;
     font-size: 1.2rem;
 }
 
 /* responsividade para telas menores */
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1199px) {
-   #navbar{
-    position: relative;
-   
-   }
+@media(max-width:1024px) {
+    #project-grid {
+        display: flex;
+        flex-direction: column;
+    }    
 
-   #navbar a{
-    font-size: 2rem;
-   }
-
-   #about{
-    width:100vh;
-   }
-
-   #projects h3{
-    font-size: 2.5rem;
-    margin-left: 100px;
-    width: 80vh;
-   }
-   #project-grid{
-     grid-template-columns:1fr;
-     margin-left: 300px;
-  
-   }
-
-   #contact{
-    width: 100vh;
-   }
-}
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 932px) {
-   #navbar{
-    position: relative;
-   }
-   #navbar a{
-    font-size: 0.80rem;
-   }
-
-}
-
-/* Estilos para celulares pequenos */
-@media (max-width: 480px) {
-    /* Estilos para celulares pequenos */
+    
 }
