@@ -15,7 +15,7 @@
 
 }
 body{
-    background-color: #000;
+    background-color: #FFF5EF;
     height:100vh;
 }
 
@@ -33,7 +33,7 @@ body{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: coral;
+    background-color: #8bcaae;
     border:0;
     border-radius: 30px;
     cursor: pointer;
@@ -41,13 +41,13 @@ body{
 }
 
 h2.titulo{
-    color: #fff;
+    color:#2F2F3A;
     font-size: 28px;
     text-align: center;
 }
 
 button:hover{
-    box-shadow: 0px 0px 8px coral;
+    box-shadow: 0px 0px 8px #D3F2E4;
     transform: scale(1.05);
 }
 /*cabeçalho*/
@@ -73,11 +73,11 @@ header a{
 }
 
  .interface .logo i{
-    color: coral;
-    font-size: 50px;
+    color: #8bcaae;
+    font-size: 60px;
 }
 header a:hover{
-    color: #fff;
+    color: #000;
     transform: scale(1.05);
 }
 
@@ -108,19 +108,16 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
-    color:#fff;
+    color:#2F2F3A;
     font-size: 38px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-do-site p{
-    color:#fff;
+    color:#2F2F3A;
     margin: 40px 0px;
 }
 
-.topo-do-site h1 .orange{
-    color: coral;
-}
 
 
 .topo-do-site .img-topo-site{
@@ -149,20 +146,21 @@ section.especialidades{
 }
 
 .especialidades .especialidades-box{
-    color:#fff;
+    color:#2F2F3A;
     padding:40px;
     margin-top: 40px;
     border-radius: 20px;
     transition: 1.2s;
+    box-shadow: 0 0 15px #D9C8F2;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover{ /*por enquanto obsoleto*/
     transform:scale(1.05px);
-    box-shadow: 0 0 15px #f0ececd8;
+    box-shadow: 0 0 15px #D9C8F2;
 }
 .especialidades .especialidades-box i{
     font-size: 70px;
-    color: coral;
+    color:  #D9C8F2;
 }
 
 
@@ -182,7 +180,7 @@ section.sobre .flex{
     gap: 60px;
 }
 .sobre .txt-sobre{
-    color: #fff;
+    color: #2F2F3A;
 }
 
 .sobre .txt-sobre h2{
@@ -193,7 +191,7 @@ section.sobre .flex{
 
 .sobre .txt-sobre h2 span{
     display: block;
-    color: coral;
+    color: #8bcaae;
 }
 .sobre .txt-sobre p{
     margin: 20px 0;
@@ -204,7 +202,7 @@ section.sobre .flex{
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    background-color: coral;
+    background-color:#D3F2E4;
     border: none;
     font-size: 20px;
     cursor: pointer;
@@ -226,7 +224,7 @@ section.portifolio .flex{
 }
 
 .img-port{
-    width:360px;
+    width:300px;
     height: 460px;
     background-size: cover;
     background-position: 44% 0%;
@@ -277,17 +275,17 @@ footer .flex{
     
 }
 .border{
-    border-top: 2px solid coral;
+    border-top: 2px solid #000;
 }
 
 footer .line-footer p i{
-    color: coral;
-    font-size: 22px;
+    color: #61f0af;
+    font-size: 30px;
 }
 
 
 footer .line-footer p a{
-    color: #fff;
+    color: #000;
 }
 
 .btn-social {
@@ -299,9 +297,9 @@ footer .line-footer p a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    width: 50px;
     height: 40px;
-    background-color: coral;
+    background-color: #9fecc9;
     color: black;
     border-radius: 50%;
     text-decoration: none;
