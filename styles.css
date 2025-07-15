@@ -5,6 +5,7 @@
 .imagem, img{
     width: 500px;
     border-radius: 5%;
+    
 }
 
 *{
@@ -41,9 +42,10 @@ body{
 }
 
 h2.titulo{
-    color:#2F2F3A;
+    color:#080808;
     font-size: 28px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 button:hover{
