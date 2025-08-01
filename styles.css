@@ -8,6 +8,10 @@
     
 }
 
+.img-port{
+    object-fit: cover;
+}
+
 *{
     margin: 0;
     padding:0;
@@ -244,6 +248,7 @@ section.portifolio .Grid{
 .img-port:hover{
     background-position: 44% 100%;
 }
+
 
 
 .overlay{ /*seta trabalhando apenas dentro de overlay por conta de position relative*/
