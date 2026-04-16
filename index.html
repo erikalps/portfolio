@@ -1,432 +1,522 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Erika Lopes — estudante de ADS </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Erika Lopes — estudante de ADS </title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
-  <!-- ===================== HEADER / NAV ===================== -->
-  <header id="topo">
-    <div class="interface nav-inner">
-      <a href="#topo" class="logo">
-        <span class="logo-bracket">{</span>erika.dev<span class="logo-bracket">}</span>
-      </a>
-      <nav class="menu-desktop">
-        <ul>
-          <li><a href="#topo" class="nav-link active">início</a></li>
-          <li><a href="#sobre" class="nav-link">sobre</a></li>
-          <li><a href="#habilidades" class="nav-link">habilidades</a></li>
-          <li><a href="#projetos" class="nav-link">projetos</a></li>
-        </ul>
-      </nav>
-      <a href="mailto:erikalopes.tech@gmail.com" class="btn-contato-nav">
-        <i class="bi bi-envelope"></i> contato
-      </a>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ===================== HERO ===================== -->
-    <section class="hero-section">
-      <div class="interface hero-inner">
-        <div class="hero-text">
-          <span class="hero-badge">
-            <span class="badge-dot"></span> disponível para projetos
-          </span>
-          <h1 class="hero-title">
-            olá, sou<br>
-            <span class="hero-name">Erika Lopes</span>
-          </h1>
-          <p class="hero-role">
-            <span class="mono">// </span>estudante de ADS 
-          </p>
-          <p class="hero-desc">
-            Explorando o mundo da tecnologia desde 2022. Foco em lógica de programação e 
-            front-end 
-          </p>
-          <div class="hero-btns">
-            <a href="#projetos" class="btn-primary">ver projetos <i class="bi bi-arrow-down"></i></a>
-            <a href="https://github.com/erikalps" target="_blank" rel="noopener noreferrer" class="btn-outline">
-              <i class="bi bi-github"></i> github
+    <!-- ===================== HEADER / NAV ===================== -->
+    <header id="topo">
+        <div class="interface nav-inner">
+            <a href="#topo" class="logo">
+                <span class="logo-bracket">{</span>erika.dev<span class="logo-bracket">}</span>
             </a>
-          </div>
-        </div>
-        <div class="hero-avatar-wrap">
-          <div class="hero-avatar-ring"></div>
-          <img src="images/foto_redonda.png" alt="Foto de Erika Lopes" class="hero-avatar-img">
-          <div class="hero-avatar-tag">
-            <i class="bi bi-code-slash"></i> 450+ problemas resolvidos
-          </div>
-        </div>
-      </div>
-
-      <!-- Stats bar -->
-      <div class="interface stats-bar">
-        <div class="stat-item">
-          <span class="stat-num">450<span class="stat-plus">+</span></span>
-          <span class="stat-label">problemas em C++</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">6</span>
-          <span class="stat-label">projetos publicados</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">2022</span>
-          <span class="stat-label">início na programação</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">2024</span>
-          <span class="stat-label">início na faculdade</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== HABILIDADES ===================== -->
-    <section class="skills-section" id="habilidades">
-      <div class="interface">
-        <div class="section-header">
-          <span class="section-label">// competências</span>
-          <h2 class="section-title">minhas <mark>habilidades</mark></h2>
-          <p class="section-desc">
-            Clique em um card para ver detalhes e projetos relacionados.
-            <span class="legend"><span class="legend-dot green"></span> tem projeto vinculado</span>
-          </p>
-        </div>
-
-        <div class="skills-grid" id="skills-grid">
-
-          <div class="skill-card has-project" data-skill="cpp">
-            <div class="skill-card-top">
-              <span class="skill-icon mono">C++</span>
-              <span class="skill-level-badge">avançado</span>
-            </div>
-            <p class="skill-card-name">C++ &amp; Lógica</p>
-            <div class="skill-bar-wrap">
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
-              <span class="skill-pct">85%</span>
-            </div>
-            <span class="has-project-dot" title="Tem projeto vinculado"></span>
-          </div>
-
-          <div class="skill-card has-project" data-skill="html">
-            <div class="skill-card-top">
-              <span class="skill-icon"><i class="bi bi-filetype-html"></i></span>
-              <span class="skill-level-badge">intermediário</span>
-            </div>
-            <p class="skill-card-name">HTML &amp; CSS</p>
-            <div class="skill-bar-wrap">
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 72%"></div></div>
-              <span class="skill-pct">72%</span>
-            </div>
-            <span class="has-project-dot" title="Tem projeto vinculado"></span>
-          </div>
-
-          <div class="skill-card has-project" data-skill="js">
-            <div class="skill-card-top">
-              <span class="skill-icon mono">JS</span>
-              <span class="skill-level-badge em-progresso">em progresso</span>
-            </div>
-            <p class="skill-card-name">JavaScript</p>
-            <div class="skill-bar-wrap">
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 45%"></div></div>
-              <span class="skill-pct">45%</span>
-            </div>
-            <span class="has-project-dot" title="Tem projeto vinculado"></span>
-          </div>
-
-          <div class="skill-card" data-skill="sql">
-            <div class="skill-card-top">
-              <span class="skill-icon"><i class="bi bi-database"></i></span>
-              <span class="skill-level-badge">intermediário</span>
-            </div>
-            <p class="skill-card-name">SQL / MySQL</p>
-            <div class="skill-bar-wrap">
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 60%"></div></div>
-              <span class="skill-pct">60%</span>
-            </div>
-          </div>
-
-          <div class="skill-card" data-skill="python">
-            <div class="skill-card-top">
-              <span class="skill-icon mono">Py</span>
-              <span class="skill-level-badge basico">básico</span>
-            </div>
-            <p class="skill-card-name">Python</p>
-            <div class="skill-bar-wrap">
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 30%"></div></div>
-              <span class="skill-pct">30%</span>
-            </div>
-          </div>
-
-          <div class="skill-card" data-skill="java">
-            <div class="skill-card-top">
-              <span class="skill-icon"><i class="bi bi-cup-hot"></i></span>
-              <span class="skill-level-badge basico">básico</span>
-            </div>
-            <p class="skill-card-name">Java</p>
-            <div class="skill-bar-wrap">
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 25%"></div></div>
-              <span class="skill-pct">25%</span>
-            </div>
-          </div>
-
-          <div class="skill-card has-project" data-skill="git">
-            <div class="skill-card-top">
-              <span class="skill-icon"><i class="bi bi-git"></i></span>
-              <span class="skill-level-badge">intermediário</span>
-            </div>
-            <p class="skill-card-name">Git &amp; GitHub</p>
-            <div class="skill-bar-wrap">
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 55%"></div></div>
-              <span class="skill-pct">55%</span>
-            </div>
-            <span class="has-project-dot" title="Tem projeto vinculado"></span>
-          </div>
-
-          <div class="skill-card" data-skill="bd">
-            <div class="skill-card-top">
-              <span class="skill-icon"><i class="bi bi-diagram-3"></i></span>
-              <span class="skill-level-badge">intermediário</span>
-            </div>
-            <p class="skill-card-name">Modelagem BD</p>
-            <div class="skill-bar-wrap">
-              <div class="skill-bar"><div class="skill-fill" style="--fill: 50%"></div></div>
-              <span class="skill-pct">50%</span>
-            </div>
-          </div>
-
-        </div><!-- /skills-grid -->
-
-        <!-- Painel de detalhes da skill (expandido via JS) -->
-        <div class="skill-detail-panel" id="skill-detail-panel" aria-live="polite"></div>
-
-      </div>
-    </section>
-
-    <!-- ===================== SOBRE ===================== -->
-    <section class="sobre-section" id="sobre">
-      <div class="interface sobre-inner">
-        <div class="sobre-img-wrap">
-          <img src="images/foto_redonda.png" alt="Foto de Erika Lopes" class="sobre-img">
-          <div class="sobre-img-border"></div>
-        </div>
-        <div class="sobre-text">
-          <span class="section-label">// sobre mim</span>
-          <h2 class="section-title">oi, <mark>prazer</mark>!</h2>
-          <p>
-            Sou estudante de programação desde <strong>2022</strong>, iniciando com C++ na resolução de problemas — onde aprendi algoritmos e desenvolvi minha lógica de programação.
-          </p>
-          <p>
-            Com o tempo, me interessei pelo front-end e busquei aprofundar meus conhecimentos. Fiz um curso no <strong>freeCodeCamp</strong>, onde aprendi HTML, CSS e JavaScript, desenvolvendo pequenos projetos. Em julho de <strong>2024</strong>, ingressei na faculdade de Análise e Desenvolvimento de Sistemas.
-          </p>
-          <p>
-            Atualmente, continuo aprimorando minhas habilidades resolvendo problemas e desenvolvendo páginas web, aprofundando cada vez mais em JavaScript.
-          </p>
-          <div class="sobre-links">
-            <a href="https://www.linkedin.com/in/erika-lopes-81625528b/" target="_blank" rel="noopener noreferrer" class="social-btn">
-              <i class="bi bi-linkedin"></i> linkedin
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#topo" class="nav-link active">início</a></li>
+                    <li><a href="#sobre" class="nav-link">sobre</a></li>
+                    <li><a href="#habilidades" class="nav-link">habilidades</a></li>
+                    <li><a href="#projetos" class="nav-link">projetos</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:erikalopes.tech@gmail.com" class="btn-contato-nav">
+                <i class="bi bi-envelope"></i> contato
             </a>
-            <a href="https://github.com/erikalps" target="_blank" rel="noopener noreferrer" class="social-btn">
-              <i class="bi bi-github"></i> github
-            </a>
-            <a href="mailto:erikalopes.tech@gmail.com" class="social-btn">
-              <i class="bi bi-envelope-at"></i> e-mail
-            </a>
-          </div>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <!-- ===================== PROJETOS ===================== -->
-    <section class="projetos-section" id="projetos">
-      <div class="interface">
-        <div class="section-header">
-          <span class="section-label">// trabalhos</span>
-          <h2 class="section-title">alguns <mark>projetos</mark></h2>
-          <p class="section-desc">Projetos desenvolvidos ao longo dos meus estudos</p>
+    <main>
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero-section">
+            <div class="interface hero-inner">
+                <div class="hero-text">
+                    <span class="hero-badge">
+                        <span class="badge-dot"></span> disponível para Estágio
+                    </span>
+                    <h1 class="hero-title">
+                        olá, sou<br>
+                        <span class="hero-name">Erika Lopes</span>
+                    </h1>
+                    <p class="hero-role">
+                        <span class="mono">// </span>estudante de ADS
+                    </p>
+                    <p class="hero-desc">
+                        Explorando o mundo da tecnologia desde 2022. Foco em lógica de programação e
+                        front-end
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projetos" class="btn-primary">ver projetos <i class="bi bi-arrow-down"></i></a>
+                        <a href="https://github.com/erikalps" target="_blank" rel="noopener noreferrer"
+                            class="btn-outline">
+                            <i class="bi bi-github"></i> github
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-avatar-wrap">
+                    <div class="hero-avatar-ring"></div>
+                    <img src="images/foto_redonda.png" alt="Foto de Erika Lopes" class="hero-avatar-img">
+                    <div class="hero-avatar-tag">
+                        <i class="bi bi-code-slash"></i> 450+ problemas resolvidos
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats bar -->
+            <div class="interface stats-bar">
+                <div class="stat-item">
+                    <span class="stat-num">450<span class="stat-plus">+</span></span>
+                    <span class="stat-label">problemas em C++</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">6</span>
+                    <span class="stat-label">projetos publicados</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">2022</span>
+                    <span class="stat-label">início na programação</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">2024</span>
+                    <span class="stat-label">início na faculdade</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== HABILIDADES ===================== -->
+        <section class="skills-section" id="habilidades">
+            <div class="interface">
+                <div class="section-header">
+                    <span class="section-label">// competências</span>
+                    <h2 class="section-title">minhas <mark>habilidades</mark></h2>
+                    <p class="section-desc">
+                        Clique em um card para ver detalhes e projetos relacionados.
+                        <span class="legend"><span class="legend-dot green"></span> tem projeto vinculado</span>
+                    </p>
+                </div>
+
+                <div class="skills-grid" id="skills-grid">
+
+                    <div class="skill-card has-project" data-skill="cpp">
+                        <div class="skill-card-top">
+                            <span class="skill-icon mono">C++</span>
+                            <span class="skill-level-badge">avançado</span>
+                        </div>
+                        <p class="skill-card-name">C++ &amp; Lógica</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 85%"></div>
+                            </div>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <span class="has-project-dot" title="Tem projeto vinculado"></span>
+                    </div>
+
+                    <div class="skill-card has-project" data-skill="html">
+                        <div class="skill-card-top">
+                            <span class="skill-icon"><i class="bi bi-filetype-html"></i></span>
+                            <span class="skill-level-badge ">intermediário</span>
+                        </div>
+                        <p class="skill-card-name">HTML &amp; CSS</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 72%"></div>
+                            </div>
+                            <span class="skill-pct">72%</span>
+                        </div>
+                        <span class="has-project-dot" title="Tem projeto vinculado"></span>
+                    </div>
+
+                    <div class="skill-card has-project" data-skill="js">
+                        <div class="skill-card-top">
+                            <span class="skill-icon mono">JS</span>
+                            <span class="skill-level-badge">intermediário</span>
+                        </div>
+                        <p class="skill-card-name">JavaScript</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 45%"></div>
+                            </div>
+                            <span class="skill-pct">45%</span>
+                        </div>
+                        <span class="has-project-dot" title="Tem projeto vinculado"></span>
+                    </div>
+                    <div class="skill-card has-project" data-skill="react">
+                        <div class="skill-card-top">
+                            <span class="skill-icon"><i class="bi bi-diagram-3"></i></span>
+                            <span class="skill-level-badge">Básico</span>
+                        </div>
+                        <p class="skill-card-name">React</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 50%"></div>
+                            </div>
+                            <span class="skill-pct">30%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card has-project" data-skill="vue">
+                        <div class="skill-card-top">
+                            <span class="skill-icon"><i class="bi bi-diagram-3"></i></span>
+                            <span class="skill-level-badge">Básico</span>
+                        </div>
+                        <p class="skill-card-name">Vuejs</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 30%"></div>
+                            </div>
+                            <span class="skill-pct">30%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="sql">
+                        <div class="skill-card-top">
+                            <span class="skill-icon"><i class="bi bi-database"></i></span>
+                            <span class="skill-level-badge">intermediário</span>
+                        </div>
+                        <p class="skill-card-name">SQL / MySQL</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 60%"></div>
+                            </div>
+                            <span class="skill-pct">60%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="python">
+                        <div class="skill-card-top">
+                            <span class="skill-icon mono">Py</span>
+                            <span class="skill-level-badge basico">básico</span>
+                        </div>
+                        <p class="skill-card-name">Python</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 30%"></div>
+                            </div>
+                            <span class="skill-pct">30%</span>
+                        </div>
+                        <span class="has-project-dot" title="Tem projeto vinculado"></span>
+                    </div>
+
+                    <div class="skill-card" data-skill="java">
+                        <div class="skill-card-top">
+                            <span class="skill-icon"><i class="bi bi-cup-hot"></i></span>
+                            <span class="skill-level-badge basico">básico</span>
+                        </div>
+                        <p class="skill-card-name">Java</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 25%"></div>
+                            </div>
+                            <span class="skill-pct">25%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card has-project" data-skill="git">
+                        <div class="skill-card-top">
+                            <span class="skill-icon"><i class="bi bi-git"></i></span>
+                            <span class="skill-level-badge">intermediário</span>
+                        </div>
+                        <p class="skill-card-name">Git &amp; GitHub</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 55%"></div>
+                            </div>
+                            <span class="skill-pct">55%</span>
+                        </div>
+                        <span class="has-project-dot" title="Tem projeto vinculado"></span>
+                    </div>
+
+                    <div class="skill-card" data-skill="bd">
+                        <div class="skill-card-top">
+                            <span class="skill-icon"><i class="bi bi-diagram-3"></i></span>
+                            <span class="skill-level-badge">intermediário</span>
+                        </div>
+                        <p class="skill-card-name">Modelagem BD</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 50%"></div>
+                            </div>
+                            <span class="skill-pct">50%</span>
+                        </div>
+                    </div>
+
+                </div><!-- /skills-grid -->
+
+                <!-- Painel de detalhes da skill (expandido via JS) -->
+                <div class="skill-detail-panel" id="skill-detail-panel" aria-live="polite"></div>
+
+            </div>
+        </section>
+
+        <!-- ===================== SOBRE ===================== -->
+        <section class="sobre-section" id="sobre">
+            <div class="interface sobre-inner">
+                <div class="sobre-img-wrap">
+                    <img src="images/foto_redonda.png" alt="Foto de Erika Lopes" class="sobre-img">
+                    <div class="sobre-img-border"></div>
+                </div>
+                <div class="sobre-text">
+                    <span class="section-label">// sobre mim</span>
+                    <h2 class="section-title">oi, <mark>prazer</mark>!</h2>
+                    <p>
+                        Sou estudante de programação desde <strong>2022</strong>, iniciando com C++ na resolução de
+                        problemas — onde aprendi algoritmos e desenvolvi minha lógica de programação.
+                    </p>
+                    <p>
+                        Com o tempo, me interessei pelo front-end e busquei aprofundar meus conhecimentos. Fiz um curso
+                        no <strong>freeCodeCamp</strong>, onde aprendi HTML, CSS e JavaScript, desenvolvendo pequenos
+                        projetos. Em julho de <strong>2024</strong>, ingressei na faculdade de Análise e Desenvolvimento
+                        de Sistemas.
+                    </p>
+                    <p>
+                        Atualmente, continuo aprimorando minhas habilidades resolvendo problemas e desenvolvendo páginas
+                        web, aprofundando cada vez mais em JavaScript.
+                    </p>
+                    <div class="sobre-links">
+                        <a href="https://www.linkedin.com/in/erika-lopes-81625528b/" target="_blank"
+                            rel="noopener noreferrer" class="social-btn">
+                            <i class="bi bi-linkedin"></i> linkedin
+                        </a>
+                        <a href="https://github.com/erikalps" target="_blank" rel="noopener noreferrer"
+                            class="social-btn">
+                            <i class="bi bi-github"></i> github
+                        </a>
+                        <a href="mailto:erikalopes.tech@gmail.com" class="social-btn">
+                            <i class="bi bi-envelope-at"></i> e-mail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROJETOS ===================== -->
+        <section class="projetos-section" id="projetos">
+            <div class="interface">
+                <div class="section-header">
+                    <span class="section-label">// Projetos pessoais</span>
+                    <h2 class="section-title">alguns <mark>projetos</mark></h2>
+                    <p class="section-desc">Projetos desenvolvidos ao longo dos meus estudos</p>
+                </div>
+
+                <div class="projetos-grid">
+                    <article class="proj-card">
+                        <div class="proj-thumb" style="background-image: url(images/ProjectFavoriteImg.png);">
+                            <div class="proj-thumb-overlay">
+                                <a href="https://favorites-movies-erikalps.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-header">
+                                <h3 class="proj-name">Lucky Shrub</h3>
+                                <a href="https://erikalps.github.io/Projeto-curseira-/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <p class="proj-desc">Sua biblioteca pessoal de cinema — pesquise, favorite e avalie os filmes que já assistiu.</p>
+                            <div class="proj-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">SCSS</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">PostergreSQL</span>
+                                <span class="tag">API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card">
+                        <div class="proj-thumb" style="background-image: url(images/CapaPrevisao.png);">
+                            <div class="proj-thumb-overlay">
+                                <a href="https://erikalps.github.io/Previsao_do_Tempo/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-header">
+                                <h3 class="proj-name">Previsão do Tempo</h3>
+                                <a href="https://erikalps.github.io/Previsao_do_Tempo/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <p class="proj-desc">App que consome API de clima para exibir previsão do tempo em tempo
+                                real.</p>
+                            <div class="proj-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card">
+                        <div class="proj-thumb" style="background-image: url(images/Fcapa_sobreMim.png);">
+                            <div class="proj-thumb-overlay">
+                                <a href="https://erikalps.github.io/Sobre_mim/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-header">
+                                <h3 class="proj-name">Sobre Mim</h3>
+                                <a href="https://erikalps.github.io/Sobre_mim/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <p class="proj-desc">Página pessoal apresentando minha trajetória e interesses.</p>
+                            <div class="proj-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card">
+                        <div class="proj-thumb" style="background-image: url(images/Fcapa_navegue.png);">
+                            <div class="proj-thumb-overlay">
+                                <a href="https://erikalps.github.io/ImuniWeb/" target="_blank" rel="noopener noreferrer"
+                                    class="proj-link-btn">
+                                    <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-header">
+                                <h3 class="proj-name">ImuniWeb</h3>
+                                <a href="https://erikalps.github.io/ImuniWeb/" target="_blank" rel="noopener noreferrer"
+                                    class="proj-icon-link" aria-label="Abrir projeto">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <p class="proj-desc">Site informativo sobre imunologia e saúde pública.</p>
+                            <div class="proj-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card">
+                        <div class="proj-thumb" style="background-image: url(images/imgSimulador.png);">
+                            <div class="proj-thumb-overlay">
+                                <a href="https://erikalps.github.io/simulador_de_emprestimos/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-header">
+                                <h3 class="proj-name">Simulador de Empréstimos</h3>
+                                <a href="https://erikalps.github.io/simulador_de_emprestimos/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <p class="proj-desc">Calculadora de parcelas e juros para simulação de empréstimos.</p>
+                            <div class="proj-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card">
+                        <div class="proj-thumb" style="background-image: url(images/imgLuckyiFor.jpeg);">
+                            <div class="proj-thumb-overlay">
+                                <a href="https://erikalps.github.io/Projeto-curseira-/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-header">
+                                <h3 class="proj-name">Lucky Shrub</h3>
+                                <a href="https://erikalps.github.io/Projeto-curseira-/" target="_blank"
+                                    rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <p class="proj-desc">Site para empresa de jardinagem, projeto do curso freeCodeCamp.</p>
+                            <div class="proj-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+
+                </div><!-- /projetos-grid -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="interface footer-inner">
+            <div class="footer-top">
+                <a href="#topo" class="logo">
+                    <span class="logo-bracket">{</span>erika.dev<span class="logo-bracket">}</span>
+                </a>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/erika-lopes-81625528b/" target="_blank"
+                        rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/erikalps" target="_blank" rel="noopener noreferrer" class="social-btn"
+                        aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="mailto:erikalopes.tech@gmail.com" class="social-btn" aria-label="E-mail">
+                        <i class="bi bi-envelope-at"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-email">
+                    <i class="bi bi-envelope-at"></i>
+                    <a href="mailto:erikalopes.tech@gmail.com">erikalopes.tech@gmail.com</a>
+                </p>
+                <p class="footer-copy">© 2026 Erika Lopes</p>
+            </div>
         </div>
+    </footer>
 
-        <div class="projetos-grid">
-
-          <article class="proj-card">
-            <div class="proj-thumb" style="background-image: url(images/CapaPrevisao.png);">
-              <div class="proj-thumb-overlay">
-                <a href="https://erikalps.github.io/Previsao_do_Tempo/" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="proj-body">
-              <div class="proj-header">
-                <h3 class="proj-name">Previsão do Tempo</h3>
-                <a href="https://erikalps.github.io/Previsao_do_Tempo/" target="_blank" rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <p class="proj-desc">App que consome API de clima para exibir previsão do tempo em tempo real.</p>
-              <div class="proj-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">API</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="proj-card">
-            <div class="proj-thumb" style="background-image: url(images/Fcapa_sobreMim.png);">
-              <div class="proj-thumb-overlay">
-                <a href="https://erikalps.github.io/Sobre_mim/" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="proj-body">
-              <div class="proj-header">
-                <h3 class="proj-name">Sobre Mim</h3>
-                <a href="https://erikalps.github.io/Sobre_mim/" target="_blank" rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <p class="proj-desc">Página pessoal apresentando minha trajetória e interesses.</p>
-              <div class="proj-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="proj-card">
-            <div class="proj-thumb" style="background-image: url(images/Fcapa_navegue.png);">
-              <div class="proj-thumb-overlay">
-                <a href="https://erikalps.github.io/ImuniWeb/" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="proj-body">
-              <div class="proj-header">
-                <h3 class="proj-name">ImuniWeb</h3>
-                <a href="https://erikalps.github.io/ImuniWeb/" target="_blank" rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <p class="proj-desc">Site informativo sobre imunologia e saúde pública.</p>
-              <div class="proj-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="proj-card">
-            <div class="proj-thumb" style="background-image: url(images/imgSimulador.png);">
-              <div class="proj-thumb-overlay">
-                <a href="https://erikalps.github.io/simulador_de_emprestimos/" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="proj-body">
-              <div class="proj-header">
-                <h3 class="proj-name">Simulador de Empréstimos</h3>
-                <a href="https://erikalps.github.io/simulador_de_emprestimos/" target="_blank" rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <p class="proj-desc">Calculadora de parcelas e juros para simulação de empréstimos.</p>
-              <div class="proj-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="proj-card">
-            <div class="proj-thumb" style="background-image: url(images/imgLuckyiFor.jpeg);">
-              <div class="proj-thumb-overlay">
-                <a href="https://erikalps.github.io/Projeto-curseira-/" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="proj-body">
-              <div class="proj-header">
-                <h3 class="proj-name">Lucky Shrub</h3>
-                <a href="https://erikalps.github.io/Projeto-curseira-/" target="_blank" rel="noopener noreferrer" class="proj-icon-link" aria-label="Abrir projeto">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <p class="proj-desc">Site para empresa de jardinagem, projeto do curso freeCodeCamp.</p>
-              <div class="proj-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="proj-card">
-            <div class="proj-thumb" style="background-image: url(images/imgLuckyi.jpeg);">
-              <div class="proj-thumb-overlay">
-                <a href="https://erikalps.github.io/formulario-freeCodeCamp/" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> ver ao vivo
-                </a>
-              </div>
-            </div>
-          
-          </article>
-
-        </div><!-- /projetos-grid -->
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===================== FOOTER ===================== -->
-  <footer>
-    <div class="interface footer-inner">
-      <div class="footer-top">
-        <a href="#topo" class="logo">
-          <span class="logo-bracket">{</span>erika.dev<span class="logo-bracket">}</span>
-        </a>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/erika-lopes-81625528b/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="https://github.com/erikalps" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
-            <i class="bi bi-github"></i>
-          </a>
-          <a href="mailto:erikalopes.tech@gmail.com" class="social-btn" aria-label="E-mail">
-            <i class="bi bi-envelope-at"></i>
-          </a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-email">
-          <i class="bi bi-envelope-at"></i>
-          <a href="mailto:erikalopes.tech@gmail.com">erikalopes.tech@gmail.com</a>
-        </p>
-        <p class="footer-copy">© 2026 Erika Lopes</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
